@@ -3,7 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   template: `
-    <h2>Activity list component</h2>
+    <h4>Activities</h4>
+    No activities
   `
 })
 export class ActivityListComponent {

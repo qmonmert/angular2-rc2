@@ -3,7 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   template: `
-    <h2>Activity detail component</h2>
+    <h4>Activity :</h4>
+    ...
   `
 })
 export class ActivityDetailComponent {

@@ -1,13 +1,26 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Person } from './person';
+import { PERSONS } from './persons';
 
 @Component({
   template: `
-    <h2>Person list component</h2>
+    <h4>Persons :</h4>
+    <ul>
+      <li *ngFor="let person of persons">
+        {{person.firstname}} {{person.name}} <button (click)="onSelect(person)">Detail</button>
+      </li>
+    </ul>
   `
 })
 export class PersonListComponent {
+
+  persons: Person[] = PERSONS;
   
   constructor(private router: Router, private route: ActivatedRoute) {}
   
+  onSelect(person: Person) {
+    this.router.navigate(['/person', person.id]);
+  }
+
 }
