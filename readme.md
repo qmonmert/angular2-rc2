@@ -5,6 +5,8 @@
 
 ### Animations
 
+Display some animations
+
 ### Router
 
 Test the router version : 3.0.0-alpha.3
