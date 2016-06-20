@@ -17,7 +17,7 @@ import { Person } from './person';
       Unknown person
     </div>
     <div>
-      <button (click)="goToPersons()">Back on persons</button>
+      <button class='btn btn-info' (click)="goToPersons()">Back on persons</button>
     </div>
   `
 })

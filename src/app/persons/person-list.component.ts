@@ -8,7 +8,7 @@ import { PERSONS } from './persons';
     <h4>Persons :</h4>
     <ul>
       <li *ngFor="let person of persons">
-        {{person.firstname}} {{person.name}} <button (click)="onSelect(person)">Detail</button>
+        {{person.firstname}} {{person.name}} <button type='button' class='btn btn-info btn-xs' (click)="onSelect(person)">Detail</button>
       </li>
     </ul>
   `
